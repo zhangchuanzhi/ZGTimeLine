@@ -13,9 +13,12 @@
 		23D416FA20AA6F14007C7BAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23D416F920AA6F14007C7BAC /* Assets.xcassets */; };
 		23D416FD20AA6F14007C7BAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23D416FB20AA6F14007C7BAC /* LaunchScreen.storyboard */; };
 		23D4170020AA6F14007C7BAC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D416FF20AA6F14007C7BAC /* main.m */; };
+		23D4170820AA7011007C7BAC /* ZGTimeLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D4170720AA7011007C7BAC /* ZGTimeLineCell.m */; };
+		9584F9A229081C974AFE1D9E /* libPods-ZGTimeLine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA4F8B30A9EA905E2E01C9E /* libPods-ZGTimeLine.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		049E97419E82B8B69F0E8E49 /* Pods-ZGTimeLine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTimeLine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTimeLine/Pods-ZGTimeLine.debug.xcconfig"; sourceTree = "<group>"; };
 		23D416ED20AA6F12007C7BAC /* ZGTimeLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZGTimeLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23D416F020AA6F12007C7BAC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23D416F120AA6F12007C7BAC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +29,11 @@
 		23D416FC20AA6F14007C7BAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23D416FE20AA6F14007C7BAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23D416FF20AA6F14007C7BAC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		23D4170620AA7011007C7BAC /* ZGTimeLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZGTimeLineCell.h; sourceTree = "<group>"; };
+		23D4170720AA7011007C7BAC /* ZGTimeLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZGTimeLineCell.m; sourceTree = "<group>"; };
+		23D4170920AA8556007C7BAC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2BA4F8B30A9EA905E2E01C9E /* libPods-ZGTimeLine.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZGTimeLine.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BB39246EA473467A54732CE /* Pods-ZGTimeLine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZGTimeLine.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZGTimeLine/Pods-ZGTimeLine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9584F9A229081C974AFE1D9E /* libPods-ZGTimeLine.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +53,8 @@
 			children = (
 				23D416EF20AA6F12007C7BAC /* ZGTimeLine */,
 				23D416EE20AA6F12007C7BAC /* Products */,
+				97616F26CF3D1BC117E3ED54 /* Pods */,
+				29C5BA782F5D8BC70B1101C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +73,33 @@
 				23D416F120AA6F12007C7BAC /* AppDelegate.m */,
 				23D416F320AA6F12007C7BAC /* ViewController.h */,
 				23D416F420AA6F12007C7BAC /* ViewController.m */,
+				23D4170620AA7011007C7BAC /* ZGTimeLineCell.h */,
+				23D4170720AA7011007C7BAC /* ZGTimeLineCell.m */,
 				23D416F620AA6F12007C7BAC /* Main.storyboard */,
 				23D416F920AA6F14007C7BAC /* Assets.xcassets */,
 				23D416FB20AA6F14007C7BAC /* LaunchScreen.storyboard */,
 				23D416FE20AA6F14007C7BAC /* Info.plist */,
 				23D416FF20AA6F14007C7BAC /* main.m */,
+				23D4170920AA8556007C7BAC /* PrefixHeader.pch */,
 			);
 			path = ZGTimeLine;
+			sourceTree = "<group>";
+		};
+		29C5BA782F5D8BC70B1101C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BA4F8B30A9EA905E2E01C9E /* libPods-ZGTimeLine.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		97616F26CF3D1BC117E3ED54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				049E97419E82B8B69F0E8E49 /* Pods-ZGTimeLine.debug.xcconfig */,
+				8BB39246EA473467A54732CE /* Pods-ZGTimeLine.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +109,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23D4170320AA6F14007C7BAC /* Build configuration list for PBXNativeTarget "ZGTimeLine" */;
 			buildPhases = (
+				B135D55EF29E9C9AA540E00C /* [CP] Check Pods Manifest.lock */,
 				23D416E920AA6F12007C7BAC /* Sources */,
 				23D416EA20AA6F12007C7BAC /* Frameworks */,
 				23D416EB20AA6F12007C7BAC /* Resources */,
+				80B842521762DE12B2D1A918 /* [CP] Embed Pods Frameworks */,
+				2191E9A5F4E0B1451D175E95 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +170,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2191E9A5F4E0B1451D175E95 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGTimeLine/Pods-ZGTimeLine-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80B842521762DE12B2D1A918 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZGTimeLine/Pods-ZGTimeLine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B135D55EF29E9C9AA540E00C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZGTimeLine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		23D416E920AA6F12007C7BAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -144,6 +229,7 @@
 				23D416F520AA6F12007C7BAC /* ViewController.m in Sources */,
 				23D4170020AA6F14007C7BAC /* main.m in Sources */,
 				23D416F220AA6F12007C7BAC /* AppDelegate.m in Sources */,
+				23D4170820AA7011007C7BAC /* ZGTimeLineCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,9 +367,12 @@
 		};
 		23D4170420AA6F14007C7BAC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 049E97419E82B8B69F0E8E49 /* Pods-ZGTimeLine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGTimeLine/PrefixHeader.pch";
 				INFOPLIST_FILE = ZGTimeLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +386,12 @@
 		};
 		23D4170520AA6F14007C7BAC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BB39246EA473467A54732CE /* Pods-ZGTimeLine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZGTimeLine/PrefixHeader.pch";
 				INFOPLIST_FILE = ZGTimeLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
